@@ -1,0 +1,34 @@
+{
+  "name": "nodejsexpressmongomochachai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "watch:test": "nodemon node_modules/.bin/mocha",
+    "lint": "eslint .",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "pre-commit": "^1.2.2",
+    "supertest": "^3.0.0"
+  }
+}
